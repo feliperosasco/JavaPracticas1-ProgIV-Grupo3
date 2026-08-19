@@ -11,7 +11,7 @@ public class Persona {
 	private String direccion;
 	private String telefono;
 	private String email;
-	
+		
 	//getters y setters
 	public String getDni() {
 		return dni;
