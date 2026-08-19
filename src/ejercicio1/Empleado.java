@@ -1,5 +1,7 @@
 package ejercicio1;
 
+import java.time.LocalDate;
+
 public class Empleado extends Persona{
 
 	private static int contadorLegajo = 1000;
@@ -15,6 +17,23 @@ public class Empleado extends Persona{
 	}
 	public void setPuesto(String puesto) {
 		this.puesto = puesto;
+	}
+	
+	public Empleado()
+	{
+		super();
+		contadorLegajo++;
+		this.legajo = contadorLegajo;
+		this.puesto = "Sin puesto";
+	}
+	
+	public Empleado(String dni, String nombre, String apellido, LocalDate fechaNacimiento, 
+			String genero, String direccion, String telefono, String email, String puesto)
+	{
+		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+		contadorLegajo++;
+		this.legajo = contadorLegajo;
+		this.puesto = puesto; 
 	}
 
 	@Override
