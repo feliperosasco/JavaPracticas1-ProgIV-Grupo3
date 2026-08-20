@@ -35,6 +35,9 @@ public class Empleado extends Persona{
 		this.legajo = contadorLegajo;
 		this.puesto = puesto; 
 	}
+	public static int devuelveProximoLegajo() {
+		return contadorLegajo + 1;
+	}
 
 	@Override
 	public String toString() {
