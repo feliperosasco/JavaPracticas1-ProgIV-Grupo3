@@ -26,7 +26,6 @@ public class Principal {
 		empleado3.setNombre("Luis");
 		empleado3.setApellido("Perez");
 		empleado3.setFechaNacimiento(LocalDate.of(1998, 07, 01));
-		empleado3.setGenero("Masculino");
 		empleado3.setDireccion("3 de Febrero 100");
 		empleado3.setTelefono("11635247"); 
 		empleado3.setEmail("luis@gmail.com");
@@ -40,11 +39,6 @@ public class Principal {
 		Empleado empleado5 = new Empleado("41123458", "Marcos" , "Soto", LocalDate.of(1998, 06, 01),"Masculino", 
 				"Constitucion 223", "113625153", "marcos@gmail.com", "Vendedor");
 		
-		System.out.println(empleado1.toString());
-		System.out.println(empleado2.toString());
-		System.out.println(empleado3.toString());
-		System.out.println(empleado4.toString());
-		System.out.println(empleado5.toString());
 	}
 
 }
